@@ -1,5 +1,5 @@
 # ZWAudioRecordTool
-Recording MP3 and Amr In iOS App
+Recording MP3 and AMR In iOS App
 
 ### 最近在做IM项目，涉及语音通讯，需要选择一款优良的通讯格式，
 ### 由于iOS原生不支持录制AMR格式和MP3格式，但是这两个格式是目前移动端比较喜爱的选择。
