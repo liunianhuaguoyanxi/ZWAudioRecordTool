@@ -121,10 +121,10 @@
     }
     self.lab.hidden = NO;
     if (Audio == ZWAudioMP3) {
-        self.lab.text = [NSString stringWithFormat:@"MP3音频录制成功，时长%ld秒",(long)du];
+        self.lab.text = [NSString stringWithFormat:@"MP3音频录制成功，时长%ld秒，点击播放",(long)du];
     }else
     {
-        self.lab.text = [NSString stringWithFormat:@"AMR音频录制成功，时长%ld秒",(long)du];
+        self.lab.text = [NSString stringWithFormat:@"AMR音频录制成功，时长%ld秒，点击播放",(long)du];
     }
 
 }
