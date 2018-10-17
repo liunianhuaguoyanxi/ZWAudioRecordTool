@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FCA85DF2175E8DD00B56F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA85DE2175E8DD00B56F0E /* Assets.xcassets */; };
+		8FCA85E22175E8DD00B56F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA85E02175E8DD00B56F0E /* LaunchScreen.storyboard */; };
+		8FCA85E52175E8DD00B56F0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA85E42175E8DD00B56F0E /* main.m */; };
+		8FCA85EF2175E8DD00B56F0E /* ZWAudioRecordToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA85EE2175E8DD00B56F0E /* ZWAudioRecordToolTests.m */; };
+		8FCA85FA2175E8DD00B56F0E /* ZWAudioRecordToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA85F92175E8DD00B56F0E /* ZWAudioRecordToolUITests.m */; };
+		8FCA86082175E95600B56F0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86072175E95600B56F0E /* main.m */; };
+		8FCA86342175E97800B56F0E /* 播放.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA860B2175E97800B56F0E /* 播放.png */; };
+		8FCA86352175E97800B56F0E /* talk_sound_p3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA860C2175E97800B56F0E /* talk_sound_p3@2x.png */; };
+		8FCA86362175E97800B56F0E /* talk_sound_p1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA860D2175E97800B56F0E /* talk_sound_p1@2x.png */; };
+		8FCA86372175E97800B56F0E /* talk_icon_recoder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA860E2175E97800B56F0E /* talk_icon_recoder@2x.png */; };
+		8FCA86382175E97800B56F0E /* talk_icon_recordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA860F2175E97800B56F0E /* talk_icon_recordCancel@2x.png */; };
+		8FCA86392175E97800B56F0E /* talk_sound_p5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86102175E97800B56F0E /* talk_sound_p5@2x.png */; };
+		8FCA863A2175E97800B56F0E /* talk_sound_p7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86112175E97800B56F0E /* talk_sound_p7@2x.png */; };
+		8FCA863B2175E97800B56F0E /* talk_icon_recordCancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86132175E97800B56F0E /* talk_icon_recordCancel@3x.png */; };
+		8FCA863C2175E97800B56F0E /* talk_sound_p2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86142175E97800B56F0E /* talk_sound_p2@2x.png */; };
+		8FCA863D2175E97800B56F0E /* talk_sound_p4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86152175E97800B56F0E /* talk_sound_p4@2x.png */; };
+		8FCA863E2175E97800B56F0E /* ZWTalkingRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86162175E97800B56F0E /* ZWTalkingRecordView.m */; };
+		8FCA863F2175E97800B56F0E /* talk_sound_p6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA86172175E97800B56F0E /* talk_sound_p6@2x.png */; };
+		8FCA86402175E97800B56F0E /* AudioConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA861A2175E97800B56F0E /* AudioConverter.mm */; };
+		8FCA86412175E97800B56F0E /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA86232175E97800B56F0E /* libopencore-amrwb.a */; };
+		8FCA86422175E97800B56F0E /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA86242175E97800B56F0E /* libopencore-amrnb.a */; };
+		8FCA86432175E97800B56F0E /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86262175E97800B56F0E /* wav.mm */; };
+		8FCA86442175E97800B56F0E /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86272175E97800B56F0E /* amrFileCodec.mm */; };
+		8FCA86452175E97800B56F0E /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCA862C2175E97800B56F0E /* libmp3lame.a */; };
+		8FCA86462175E97800B56F0E /* ZWAMRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA862F2175E97800B56F0E /* ZWAMRPlayer.m */; };
+		8FCA86472175E97800B56F0E /* ZWMP3Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86322175E97800B56F0E /* ZWMP3Player.m */; };
+		8FCA864B2175E99600B56F0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA86492175E99600B56F0E /* AppDelegate.m */; };
+		8FCA864F2175E9AE00B56F0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA864D2175E9AE00B56F0E /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FCA85EB2175E8DD00B56F0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FCA85CA2175E8DB00B56F0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FCA85D12175E8DB00B56F0E;
+			remoteInfo = ZWAudioRecordTool;
+		};
+		8FCA85F62175E8DD00B56F0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FCA85CA2175E8DB00B56F0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FCA85D12175E8DB00B56F0E;
+			remoteInfo = ZWAudioRecordTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FCA85D22175E8DB00B56F0E /* ZWAudioRecordTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWAudioRecordTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCA85DE2175E8DD00B56F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FCA85E12175E8DD00B56F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FCA85E32175E8DD00B56F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCA85E42175E8DD00B56F0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FCA85EA2175E8DD00B56F0E /* ZWAudioRecordToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWAudioRecordToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCA85EE2175E8DD00B56F0E /* ZWAudioRecordToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWAudioRecordToolTests.m; sourceTree = "<group>"; };
+		8FCA85F02175E8DD00B56F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCA85F52175E8DD00B56F0E /* ZWAudioRecordToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWAudioRecordToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCA85F92175E8DD00B56F0E /* ZWAudioRecordToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWAudioRecordToolUITests.m; sourceTree = "<group>"; };
+		8FCA85FB2175E8DD00B56F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCA86072175E95600B56F0E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FCA860B2175E97800B56F0E /* 播放.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放.png"; sourceTree = "<group>"; };
+		8FCA860C2175E97800B56F0E /* talk_sound_p3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p3@2x.png"; sourceTree = "<group>"; };
+		8FCA860D2175E97800B56F0E /* talk_sound_p1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p1@2x.png"; sourceTree = "<group>"; };
+		8FCA860E2175E97800B56F0E /* talk_icon_recoder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_icon_recoder@2x.png"; sourceTree = "<group>"; };
+		8FCA860F2175E97800B56F0E /* talk_icon_recordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_icon_recordCancel@2x.png"; sourceTree = "<group>"; };
+		8FCA86102175E97800B56F0E /* talk_sound_p5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p5@2x.png"; sourceTree = "<group>"; };
+		8FCA86112175E97800B56F0E /* talk_sound_p7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p7@2x.png"; sourceTree = "<group>"; };
+		8FCA86122175E97800B56F0E /* ZWTalkingRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTalkingRecordView.h; sourceTree = "<group>"; };
+		8FCA86132175E97800B56F0E /* talk_icon_recordCancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_icon_recordCancel@3x.png"; sourceTree = "<group>"; };
+		8FCA86142175E97800B56F0E /* talk_sound_p2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p2@2x.png"; sourceTree = "<group>"; };
+		8FCA86152175E97800B56F0E /* talk_sound_p4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p4@2x.png"; sourceTree = "<group>"; };
+		8FCA86162175E97800B56F0E /* ZWTalkingRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTalkingRecordView.m; sourceTree = "<group>"; };
+		8FCA86172175E97800B56F0E /* talk_sound_p6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "talk_sound_p6@2x.png"; sourceTree = "<group>"; };
+		8FCA861A2175E97800B56F0E /* AudioConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioConverter.mm; sourceTree = "<group>"; };
+		8FCA861D2175E97800B56F0E /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		8FCA861E2175E97800B56F0E /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		8FCA86202175E97800B56F0E /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		8FCA86212175E97800B56F0E /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		8FCA86232175E97800B56F0E /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		8FCA86242175E97800B56F0E /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		8FCA86262175E97800B56F0E /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		8FCA86272175E97800B56F0E /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		8FCA86282175E97800B56F0E /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		8FCA86292175E97800B56F0E /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		8FCA862A2175E97800B56F0E /* AudioConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConverter.h; sourceTree = "<group>"; };
+		8FCA862C2175E97800B56F0E /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		8FCA862D2175E97800B56F0E /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		8FCA862F2175E97800B56F0E /* ZWAMRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAMRPlayer.m; sourceTree = "<group>"; };
+		8FCA86302175E97800B56F0E /* ZWAMRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAMRPlayer.h; sourceTree = "<group>"; };
+		8FCA86322175E97800B56F0E /* ZWMP3Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWMP3Player.m; sourceTree = "<group>"; };
+		8FCA86332175E97800B56F0E /* ZWMP3Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWMP3Player.h; sourceTree = "<group>"; };
+		8FCA86492175E99600B56F0E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FCA864A2175E99600B56F0E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FCA864D2175E9AE00B56F0E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8FCA864E2175E9AE00B56F0E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FCA85CF2175E8DB00B56F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCA86452175E97800B56F0E /* libmp3lame.a in Frameworks */,
+				8FCA86412175E97800B56F0E /* libopencore-amrwb.a in Frameworks */,
+				8FCA86422175E97800B56F0E /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85E72175E8DD00B56F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85F22175E8DD00B56F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FCA85C92175E8DB00B56F0E = {
+			isa = PBXGroup;
+			children = (
+				8FCA85D42175E8DB00B56F0E /* ZWAudioRecordTool */,
+				8FCA85ED2175E8DD00B56F0E /* ZWAudioRecordToolTests */,
+				8FCA85F82175E8DD00B56F0E /* ZWAudioRecordToolUITests */,
+				8FCA85D32175E8DB00B56F0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FCA85D32175E8DB00B56F0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA85D22175E8DB00B56F0E /* ZWAudioRecordTool.app */,
+				8FCA85EA2175E8DD00B56F0E /* ZWAudioRecordToolTests.xctest */,
+				8FCA85F52175E8DD00B56F0E /* ZWAudioRecordToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FCA85D42175E8DB00B56F0E /* ZWAudioRecordTool */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA864C2175E9AE00B56F0E /* Demo */,
+				8FCA86482175E97D00B56F0E /* Other */,
+				8FCA86092175E97800B56F0E /* ZWAudioRecordTool */,
+				8FCA86072175E95600B56F0E /* main.m */,
+				8FCA85DE2175E8DD00B56F0E /* Assets.xcassets */,
+				8FCA85E02175E8DD00B56F0E /* LaunchScreen.storyboard */,
+				8FCA85E32175E8DD00B56F0E /* Info.plist */,
+				8FCA85E42175E8DD00B56F0E /* main.m */,
+			);
+			path = ZWAudioRecordTool;
+			sourceTree = "<group>";
+		};
+		8FCA85ED2175E8DD00B56F0E /* ZWAudioRecordToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA85EE2175E8DD00B56F0E /* ZWAudioRecordToolTests.m */,
+				8FCA85F02175E8DD00B56F0E /* Info.plist */,
+			);
+			path = ZWAudioRecordToolTests;
+			sourceTree = "<group>";
+		};
+		8FCA85F82175E8DD00B56F0E /* ZWAudioRecordToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA85F92175E8DD00B56F0E /* ZWAudioRecordToolUITests.m */,
+				8FCA85FB2175E8DD00B56F0E /* Info.plist */,
+			);
+			path = ZWAudioRecordToolUITests;
+			sourceTree = "<group>";
+		};
+		8FCA86092175E97800B56F0E /* ZWAudioRecordTool */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA860A2175E97800B56F0E /* TalkingRecordView */,
+				8FCA86182175E97800B56F0E /* Thirdparts */,
+				8FCA862E2175E97800B56F0E /* ZWAMRPlayer */,
+				8FCA86312175E97800B56F0E /* ZWMP3Player */,
+			);
+			path = ZWAudioRecordTool;
+			sourceTree = "<group>";
+		};
+		8FCA860A2175E97800B56F0E /* TalkingRecordView */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA860B2175E97800B56F0E /* 播放.png */,
+				8FCA860C2175E97800B56F0E /* talk_sound_p3@2x.png */,
+				8FCA860D2175E97800B56F0E /* talk_sound_p1@2x.png */,
+				8FCA860E2175E97800B56F0E /* talk_icon_recoder@2x.png */,
+				8FCA860F2175E97800B56F0E /* talk_icon_recordCancel@2x.png */,
+				8FCA86102175E97800B56F0E /* talk_sound_p5@2x.png */,
+				8FCA86112175E97800B56F0E /* talk_sound_p7@2x.png */,
+				8FCA86122175E97800B56F0E /* ZWTalkingRecordView.h */,
+				8FCA86132175E97800B56F0E /* talk_icon_recordCancel@3x.png */,
+				8FCA86142175E97800B56F0E /* talk_sound_p2@2x.png */,
+				8FCA86152175E97800B56F0E /* talk_sound_p4@2x.png */,
+				8FCA86162175E97800B56F0E /* ZWTalkingRecordView.m */,
+				8FCA86172175E97800B56F0E /* talk_sound_p6@2x.png */,
+			);
+			path = TalkingRecordView;
+			sourceTree = "<group>";
+		};
+		8FCA86182175E97800B56F0E /* Thirdparts */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA86192175E97800B56F0E /* AmrConverter */,
+				8FCA862B2175E97800B56F0E /* LameUitls */,
+			);
+			path = Thirdparts;
+			sourceTree = "<group>";
+		};
+		8FCA86192175E97800B56F0E /* AmrConverter */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA861A2175E97800B56F0E /* AudioConverter.mm */,
+				8FCA861B2175E97800B56F0E /* include */,
+				8FCA86222175E97800B56F0E /* lib */,
+				8FCA86252175E97800B56F0E /* amrwapper */,
+				8FCA862A2175E97800B56F0E /* AudioConverter.h */,
+			);
+			path = AmrConverter;
+			sourceTree = "<group>";
+		};
+		8FCA861B2175E97800B56F0E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA861C2175E97800B56F0E /* opencore-amrwb */,
+				8FCA861F2175E97800B56F0E /* opencore-amrnb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8FCA861C2175E97800B56F0E /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA861D2175E97800B56F0E /* if_rom.h */,
+				8FCA861E2175E97800B56F0E /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		8FCA861F2175E97800B56F0E /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA86202175E97800B56F0E /* interf_dec.h */,
+				8FCA86212175E97800B56F0E /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		8FCA86222175E97800B56F0E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA86232175E97800B56F0E /* libopencore-amrwb.a */,
+				8FCA86242175E97800B56F0E /* libopencore-amrnb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8FCA86252175E97800B56F0E /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA86262175E97800B56F0E /* wav.mm */,
+				8FCA86272175E97800B56F0E /* amrFileCodec.mm */,
+				8FCA86282175E97800B56F0E /* amrFileCodec.h */,
+				8FCA86292175E97800B56F0E /* wav.h */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		8FCA862B2175E97800B56F0E /* LameUitls */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA862C2175E97800B56F0E /* libmp3lame.a */,
+				8FCA862D2175E97800B56F0E /* lame.h */,
+			);
+			path = LameUitls;
+			sourceTree = "<group>";
+		};
+		8FCA862E2175E97800B56F0E /* ZWAMRPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA862F2175E97800B56F0E /* ZWAMRPlayer.m */,
+				8FCA86302175E97800B56F0E /* ZWAMRPlayer.h */,
+			);
+			path = ZWAMRPlayer;
+			sourceTree = "<group>";
+		};
+		8FCA86312175E97800B56F0E /* ZWMP3Player */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA86322175E97800B56F0E /* ZWMP3Player.m */,
+				8FCA86332175E97800B56F0E /* ZWMP3Player.h */,
+			);
+			path = ZWMP3Player;
+			sourceTree = "<group>";
+		};
+		8FCA86482175E97D00B56F0E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA864A2175E99600B56F0E /* AppDelegate.h */,
+				8FCA86492175E99600B56F0E /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8FCA864C2175E9AE00B56F0E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA864D2175E9AE00B56F0E /* ViewController.m */,
+				8FCA864E2175E9AE00B56F0E /* ViewController.h */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FCA85D12175E8DB00B56F0E /* ZWAudioRecordTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCA85FE2175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordTool" */;
+			buildPhases = (
+				8FCA85CE2175E8DB00B56F0E /* Sources */,
+				8FCA85CF2175E8DB00B56F0E /* Frameworks */,
+				8FCA85D02175E8DB00B56F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWAudioRecordTool;
+			productName = ZWAudioRecordTool;
+			productReference = 8FCA85D22175E8DB00B56F0E /* ZWAudioRecordTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FCA85E92175E8DD00B56F0E /* ZWAudioRecordToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCA86012175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordToolTests" */;
+			buildPhases = (
+				8FCA85E62175E8DD00B56F0E /* Sources */,
+				8FCA85E72175E8DD00B56F0E /* Frameworks */,
+				8FCA85E82175E8DD00B56F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FCA85EC2175E8DD00B56F0E /* PBXTargetDependency */,
+			);
+			name = ZWAudioRecordToolTests;
+			productName = ZWAudioRecordToolTests;
+			productReference = 8FCA85EA2175E8DD00B56F0E /* ZWAudioRecordToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FCA85F42175E8DD00B56F0E /* ZWAudioRecordToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCA86042175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordToolUITests" */;
+			buildPhases = (
+				8FCA85F12175E8DD00B56F0E /* Sources */,
+				8FCA85F22175E8DD00B56F0E /* Frameworks */,
+				8FCA85F32175E8DD00B56F0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FCA85F72175E8DD00B56F0E /* PBXTargetDependency */,
+			);
+			name = ZWAudioRecordToolUITests;
+			productName = ZWAudioRecordToolUITests;
+			productReference = 8FCA85F52175E8DD00B56F0E /* ZWAudioRecordToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FCA85CA2175E8DB00B56F0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = liunianhuaguoyanxi;
+				TargetAttributes = {
+					8FCA85D12175E8DB00B56F0E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8FCA85E92175E8DD00B56F0E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8FCA85D12175E8DB00B56F0E;
+					};
+					8FCA85F42175E8DD00B56F0E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8FCA85D12175E8DB00B56F0E;
+					};
+				};
+			};
+			buildConfigurationList = 8FCA85CD2175E8DB00B56F0E /* Build configuration list for PBXProject "ZWAudioRecordTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FCA85C92175E8DB00B56F0E;
+			productRefGroup = 8FCA85D32175E8DB00B56F0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FCA85D12175E8DB00B56F0E /* ZWAudioRecordTool */,
+				8FCA85E92175E8DD00B56F0E /* ZWAudioRecordToolTests */,
+				8FCA85F42175E8DD00B56F0E /* ZWAudioRecordToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FCA85D02175E8DB00B56F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCA863D2175E97800B56F0E /* talk_sound_p4@2x.png in Resources */,
+				8FCA86362175E97800B56F0E /* talk_sound_p1@2x.png in Resources */,
+				8FCA86392175E97800B56F0E /* talk_sound_p5@2x.png in Resources */,
+				8FCA85E22175E8DD00B56F0E /* LaunchScreen.storyboard in Resources */,
+				8FCA85DF2175E8DD00B56F0E /* Assets.xcassets in Resources */,
+				8FCA863F2175E97800B56F0E /* talk_sound_p6@2x.png in Resources */,
+				8FCA86382175E97800B56F0E /* talk_icon_recordCancel@2x.png in Resources */,
+				8FCA863B2175E97800B56F0E /* talk_icon_recordCancel@3x.png in Resources */,
+				8FCA863A2175E97800B56F0E /* talk_sound_p7@2x.png in Resources */,
+				8FCA863C2175E97800B56F0E /* talk_sound_p2@2x.png in Resources */,
+				8FCA86342175E97800B56F0E /* 播放.png in Resources */,
+				8FCA86372175E97800B56F0E /* talk_icon_recoder@2x.png in Resources */,
+				8FCA86352175E97800B56F0E /* talk_sound_p3@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85E82175E8DD00B56F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85F32175E8DD00B56F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FCA85CE2175E8DB00B56F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCA86432175E97800B56F0E /* wav.mm in Sources */,
+				8FCA86082175E95600B56F0E /* main.m in Sources */,
+				8FCA864B2175E99600B56F0E /* AppDelegate.m in Sources */,
+				8FCA863E2175E97800B56F0E /* ZWTalkingRecordView.m in Sources */,
+				8FCA864F2175E9AE00B56F0E /* ViewController.m in Sources */,
+				8FCA86442175E97800B56F0E /* amrFileCodec.mm in Sources */,
+				8FCA86462175E97800B56F0E /* ZWAMRPlayer.m in Sources */,
+				8FCA85E52175E8DD00B56F0E /* main.m in Sources */,
+				8FCA86472175E97800B56F0E /* ZWMP3Player.m in Sources */,
+				8FCA86402175E97800B56F0E /* AudioConverter.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85E62175E8DD00B56F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCA85EF2175E8DD00B56F0E /* ZWAudioRecordToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCA85F12175E8DD00B56F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCA85FA2175E8DD00B56F0E /* ZWAudioRecordToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FCA85EC2175E8DD00B56F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FCA85D12175E8DB00B56F0E /* ZWAudioRecordTool */;
+			targetProxy = 8FCA85EB2175E8DD00B56F0E /* PBXContainerItemProxy */;
+		};
+		8FCA85F72175E8DD00B56F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FCA85D12175E8DB00B56F0E /* ZWAudioRecordTool */;
+			targetProxy = 8FCA85F62175E8DD00B56F0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FCA85E02175E8DD00B56F0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FCA85E12175E8DD00B56F0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FCA85FC2175E8DD00B56F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FCA85FD2175E8DD00B56F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FCA85FF2175E8DD00B56F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8HS99YY37;
+				INFOPLIST_FILE = ZWAudioRecordTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZWAudioRecordTool/ZWAudioRecordTool/Thirdparts/AmrConverter/lib",
+					"$(PROJECT_DIR)/ZWAudioRecordTool/ZWAudioRecordTool/Thirdparts/LameUitls",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FCA86002175E8DD00B56F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8HS99YY37;
+				INFOPLIST_FILE = ZWAudioRecordTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZWAudioRecordTool/ZWAudioRecordTool/Thirdparts/AmrConverter/lib",
+					"$(PROJECT_DIR)/ZWAudioRecordTool/ZWAudioRecordTool/Thirdparts/LameUitls",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FCA86022175E8DD00B56F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZWAudioRecordToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWAudioRecordTool.app/ZWAudioRecordTool";
+			};
+			name = Debug;
+		};
+		8FCA86032175E8DD00B56F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZWAudioRecordToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWAudioRecordTool.app/ZWAudioRecordTool";
+			};
+			name = Release;
+		};
+		8FCA86052175E8DD00B56F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZWAudioRecordToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWAudioRecordTool;
+			};
+			name = Debug;
+		};
+		8FCA86062175E8DD00B56F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZWAudioRecordToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.base.liunianhuaguoyanxi.ZWAudioRecordToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWAudioRecordTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FCA85CD2175E8DB00B56F0E /* Build configuration list for PBXProject "ZWAudioRecordTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCA85FC2175E8DD00B56F0E /* Debug */,
+				8FCA85FD2175E8DD00B56F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FCA85FE2175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCA85FF2175E8DD00B56F0E /* Debug */,
+				8FCA86002175E8DD00B56F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FCA86012175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCA86022175E8DD00B56F0E /* Debug */,
+				8FCA86032175E8DD00B56F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FCA86042175E8DD00B56F0E /* Build configuration list for PBXNativeTarget "ZWAudioRecordToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCA86052175E8DD00B56F0E /* Debug */,
+				8FCA86062175E8DD00B56F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FCA85CA2175E8DB00B56F0E /* Project object */;
+}
