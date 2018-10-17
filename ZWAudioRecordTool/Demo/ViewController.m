@@ -119,6 +119,7 @@
         [self.view addSubview:lab];
         self.lab= lab;
     }
+    self.lab.hidden = NO;
     if (Audio == ZWAudioMP3) {
         self.lab.text = [NSString stringWithFormat:@"MP3音频录制成功，时长%ld秒",(long)du];
     }else
