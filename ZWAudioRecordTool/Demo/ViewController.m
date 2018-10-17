@@ -15,12 +15,13 @@
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 @interface ViewController ()<ZWTalkingRecordViewDelegate>
 
-@property (nonatomic, weak) ZWTalkingRecordView *recordView;
+@property (weak,   nonatomic)   ZWTalkingRecordView *recordView;
 @property (strong, nonatomic) ZWAMRPlayer * audioAmrPlayer;
 @property (strong, nonatomic) ZWMP3Player * audioMP3Player;
-@property (weak,   nonatomic)   UIButton * btnStartPlay;
-@property (assign, nonatomic)   ZWAudio  audioStyle;
-@property (copy,   nonatomic)   NSString *  path;
+@property (weak,   nonatomic)   UIButton  * btnStartPlay;
+@property (weak,   nonatomic)   UILabel   * lab;
+@property (assign, nonatomic)   ZWAudio     audioStyle;
+@property (copy,   nonatomic)   NSString  *  path;
 @end
 
 @implementation ViewController
@@ -84,6 +85,8 @@
         [_recordView recordCancel];
     }
     self.recordView.state = sts;
+    
+    self.lab.hidden = self.btnStartPlay.hidden;
 }
 
 - (void)actionBarTalkFinished {
@@ -110,6 +113,19 @@
     self.path = path;
     self.audioStyle = Audio;
     self.btnStartPlay.hidden = NO;
+    if (!self.lab) {
+        UILabel * lab = [[UILabel alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 350)/2,self.view.frame.size.height - 290, 350, 30)];
+        lab.textAlignment = NSTextAlignmentCenter;
+        [self.view addSubview:lab];
+        self.lab= lab;
+    }
+    if (Audio == ZWAudioMP3) {
+        self.lab.text = [NSString stringWithFormat:@"MP3音频录制成功，时长%ld秒",(long)du];
+    }else
+    {
+        self.lab.text = [NSString stringWithFormat:@"AMR音频录制成功，时长%ld秒",(long)du];
+    }
+
 }
 
 - (UILabel*)linesText:(NSString*)text font:(UIFont*)font wid:(CGFloat)wid lines:(int)lines color:(UIColor*)color {
